@@ -1,6 +1,7 @@
 package com.jsoftwares.mvc;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -8,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class AboutController {
 	
 	@RequestMapping(value="/the-team")
-	public String theTeam()
+	public String theTeam(Model model)
 	{
 		return "the-team";
 	}
