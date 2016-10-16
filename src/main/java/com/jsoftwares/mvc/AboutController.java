@@ -20,4 +20,11 @@ public class AboutController {
 		model.addAttribute("title", "Mission");
 		return "about/mission";
 	}
+	
+	@RequestMapping(value="/vision")
+	public String vision(Model model)
+	{
+		model.addAttribute("title", "Vision");
+		return "about/vision";
+	}
 }
