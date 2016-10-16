@@ -11,6 +11,7 @@ public class AboutController {
 	@RequestMapping(value="/the-team")
 	public String theTeam(Model model)
 	{
+		model.addAttribute("title", "The Team");
 		return "the-team";
 	}
 }
