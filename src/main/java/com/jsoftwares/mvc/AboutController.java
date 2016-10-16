@@ -12,6 +12,6 @@ public class AboutController {
 	public String theTeam(Model model)
 	{
 		model.addAttribute("title", "The Team");
-		return "the-team";
+		return "about/the-team";
 	}
 }
