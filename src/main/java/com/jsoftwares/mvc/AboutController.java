@@ -5,13 +5,19 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping(value="/about")
+@RequestMapping(value = "/about")
 public class AboutController {
-	
-	@RequestMapping(value="/the-team")
-	public String theTeam(Model model)
-	{
+
+	@RequestMapping(value = "/the-team")
+	public String theTeam(Model model) {
 		model.addAttribute("title", "The Team");
 		return "about/the-team";
+	}
+
+	@RequestMapping(value = "/mission")
+	public String mission(Model model) 
+	{
+		model.addAttribute("title", "Mission");
+		return "about/mission";
 	}
 }
