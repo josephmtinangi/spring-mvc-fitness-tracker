@@ -9,5 +9,21 @@
 </head>
 <body>
 	<h1>${ title }</h1>
+	<form:form commandName="exercise">
+		<table>
+			<tr>
+				<td>Minutes Exercised for Today:</td>
+				<td>
+					<form:input path="minutes"/>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<button type="submit">Enter Exercise</button>
+				</td>
+			</tr>
+		</table>
+	</form:form>
 </body>
 </html>
