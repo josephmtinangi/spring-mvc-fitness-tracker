@@ -9,6 +9,9 @@
 <title>${ title }</title>
 </head>
 <body>
+
+	Language : <a href="?language=en">English</a> | <a href="?language=sw">Swahili</a>
+
 	<h1>${ title }</h1>
 	<form:form commandName="exercise">
 		<table>

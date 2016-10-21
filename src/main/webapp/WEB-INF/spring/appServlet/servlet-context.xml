@@ -30,5 +30,15 @@
 		class="org.springframework.context.support.ResourceBundleMessageSource">
 		<beans:property name="basename" value="messages"></beans:property>
 	</beans:bean>
+	
+	<interceptors>
+		<beans:bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor" >
+			<beans:property name="paramName" value="language"></beans:property>
+		</beans:bean>
+	</interceptors>
+	
+	<beans:bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
+		<beans:property name="defaultLocale" value="en"></beans:property>
+	</beans:bean>
 
 </beans:beans>
