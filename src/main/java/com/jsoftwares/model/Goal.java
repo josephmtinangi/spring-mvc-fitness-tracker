@@ -1,7 +1,10 @@
 package com.jsoftwares.model;
 
+import org.hibernate.validator.constraints.Range;
+
 public class Goal {
-	
+
+	@Range(min = 1, max = 120)
 	private int minutes;
 
 	public int getMinutes() {
@@ -11,5 +14,5 @@ public class Goal {
 	public void setMinutes(int minutes) {
 		this.minutes = minutes;
 	}
-	
+
 }
